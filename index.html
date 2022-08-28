@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App Project</title>
   </head>
@@ -28,28 +29,26 @@
         <div class="weather-app">
           <div class="row">
             <div class="col-4">
-              <h2><strong>17 </strong><span class="units">°C | °F</span></h2>
+              <h2><strong id="temperature"></strong><span class="units">°C | °F</span></h2>
               <ul>
-                <li>Overcast clouds</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 5 km/h</li>
+                <li id="description"></li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
             <div class="col-2">
-      
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                  alt="Partly cloudy"
-                  id="icon"
-                />
-              
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="Partly cloudy"
+                id="icon"
+              />
             </div>
             <div class="col-6">
-              <h1>Kyiv</h1>
+              <h1 id="city"></h1>
               <ul class="date">
-                <li>Sunday</li>
-                <li>August, 28th</li>
-                <li>11:17</li>
+                <li id="day"></li>
+                <li id="date"></li>
+                <li id="hour"></li>
               </ul>
             </div>
           </div>

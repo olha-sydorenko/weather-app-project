@@ -22,6 +22,7 @@ li {
   list-style: none;
   font-size: 20px;
   font-weight: 200;
+  text-transform: capitalize;
 }
 .date {
   padding-top: 15px;
