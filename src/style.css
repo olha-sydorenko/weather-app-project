@@ -1,3 +1,51 @@
+body {
+  font-family: "Ibarra Real Nova", serif;
+  color: #264bf0;
+}
 h1 {
-    color: blue;
+  margin-left: 20px;
+  font-size: 38px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  height: 64px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 200;
+}
+.date {
+  padding-top: 15px;
+  margin-left: 20px;
+}
+
+.weather-app-wrapper {
+  max-width: 500px;
+  margin: 30px auto;
+}
+.weather-app {
+  padding: 20px;
+  border: 1px solid #264bf0;
+  border-radius: 5px;
+}
+
+img {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 10px;
+}
+
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -16px;
 }
