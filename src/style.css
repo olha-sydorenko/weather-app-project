@@ -26,7 +26,7 @@ li {
   font-weight: 200;
 }
 li:first-letter {
-text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .date {
@@ -44,12 +44,12 @@ text-transform: capitalize;
   border-radius: 5px;
 }
 .active {
-    color: #264bf0;
-    cursor: default;
-    text-decoration: none;
+  color: #264bf0;
+  cursor: default;
+  text-decoration: none;
 }
 .active:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 img {
   margin-top: 0px;
@@ -61,4 +61,18 @@ img {
   position: relative;
   font-size: 16px;
   top: -16px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.weather-forecast-temp {
+  font-size: 13px;
 }
