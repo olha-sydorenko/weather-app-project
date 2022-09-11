@@ -60,6 +60,36 @@ if (minutes < 10) {
 let currentHour = document.querySelector("#hour");
 currentHour.innerHTML = `${hour}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-2">
+    <div class="weather-forecast-date">${day}</div>
+    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+     alt="" width="42"/>
+  <div class="weather-forecast-temp">
+   <span class="weather-forecast-temp-max"> 
+     18°
+   </span> 
+   <span class="weather-forecast-temp-min">
+     12°
+    </span> 
+  </div>
+  </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -108,7 +138,6 @@ function convertCels(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
@@ -120,3 +149,4 @@ fahrLink.addEventListener("click", convertFahr);
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertCels);
 search("Kyiv");
+displayForecast();
