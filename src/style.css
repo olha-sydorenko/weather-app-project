@@ -1,7 +1,11 @@
 body {
   font-family: "Ibarra Real Nova", serif;
   color: #264bf0;
-  background-color: #acbbff;
+  background: linear-gradient(
+    90deg,
+    rgb(243, 247, 252) 0%,
+    rgb(172, 187, 255) 100%
+  );
 }
 h1 {
   font-size: 38px;
