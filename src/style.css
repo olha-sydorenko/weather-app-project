@@ -1,6 +1,7 @@
 body {
   font-family: "Ibarra Real Nova", serif;
   color: #264bf0;
+  background-color: #acbbff;
 }
 h1 {
   font-size: 38px;
@@ -24,6 +25,7 @@ li {
   list-style: none;
   font-size: 20px;
   font-weight: 200;
+  line-height: 25px;
 }
 li:first-letter {
   text-transform: capitalize;
@@ -43,14 +45,7 @@ li:first-letter {
   border: 1px solid #264bf0;
   border-radius: 5px;
 }
-.active {
-  color: #264bf0;
-  cursor: default;
-  text-decoration: none;
-}
-.active:hover {
-  text-decoration: none;
-}
+
 img {
   margin-top: 0px;
   padding-top: 0px;
